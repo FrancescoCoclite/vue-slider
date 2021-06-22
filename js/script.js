@@ -9,6 +9,9 @@ var app = new Vue({
             'img/img4.jpg',
         ]
     },
+    mounted (){
+        this.autoPlay()
+    },
     methods:{
         succ(){
             if (this.counter == this.photo.length-1){
@@ -29,7 +32,17 @@ var app = new Vue({
         },
         pallini(indice){
             this.counter = indice;
+        },
+        autoPlay(){
+            setInterval(() => {
+                if (this.counter == this.photo.length-1){
+                    this.counter = 0;
+                    
+                }
+                else{
+                    this.counter++;
+                }
+            }, 3000);
         }
-        
     }
 })
