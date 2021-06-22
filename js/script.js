@@ -30,5 +30,6 @@ var app = new Vue({
         pallini(indice){
             this.counter = indice;
         }
+        
     }
 })

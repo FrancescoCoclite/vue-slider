@@ -43,6 +43,6 @@
 
 }
 
-.point i:active{
+.point i.active{
     color: red;
 }
