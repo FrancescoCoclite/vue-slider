@@ -40,4 +40,9 @@
 .point i {
     margin-left: 10px;
     margin-right: 10px;
+
+}
+
+.point i:active{
+    color: red;
 }
