@@ -26,6 +26,9 @@ var app = new Vue({
             else{
                 this.counter--;
             }
+        },
+        pallini(indice){
+            this.counter = indice;
         }
     }
 })
